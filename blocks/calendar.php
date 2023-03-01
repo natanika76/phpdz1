@@ -88,7 +88,7 @@
         for($i = 0; $i < $start; $i++) $string .='<td>&nbsp;</td>';
 
         $frame = $start -1;
-        for($i = 1; $i < $stop; $i++){
+        for($i = 1; $i <= $stop; $i++){
             $day = mktime(0,0,0, date("m"), $i, date("Y"));
             $frame++;
             if($frame > 6) {
